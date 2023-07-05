@@ -1,0 +1,92 @@
+MobileNet
+[[1099    0    2    0   14    1    0    2    0    0   12]
+ [  18  861   46    0   45   11    0    1    0    0    0]
+ [   4    6 1227    2    0    0    0    0    0    0    6]
+ [  41    0   23 1023    4    2    0    0    1    0    8]
+ [  21    0    8    0 1112    0    0    0    0    0   12]
+ [   0    0    1    0    0  698    0    0    0    0    0]
+ [   8    0   33    0    8  117  565    0    0    0    0]
+ [  12    0    0    0    0    0    0  803    1    0    0]
+ [   7    1   64    2   91    9    2   11  671    0    3]
+ [   1    1   12    2    0    6   12    0    0 1175   11]
+ [   0    0    0    0    0    0    0    0    0    0  402]]
+                               precision    recall  f1-score   support
+
+               Bacterial_spot       0.91      0.97      0.94      1130
+                 Early_blight       0.99      0.88      0.93       982
+                  Late_blight       0.87      0.99      0.92      1245
+                    Leaf_Mold       0.99      0.93      0.96      1102
+           Septoria_leaf_spot       0.87      0.96      0.92      1153
+                 Spider_mites       0.83      1.00      0.90       699
+                  Target_Spot       0.98      0.77      0.86       731
+Tomato_Yellow_Leaf_Curl_Virus       0.98      0.98      0.98       816
+          Tomato_mosaic_virus       1.00      0.78      0.87       861
+                      healthy       1.00      0.96      0.98      1220
+               powdery_mildew       0.89      1.00      0.94       402
+
+                     accuracy                           0.93     10341
+                    macro avg       0.94      0.93      0.93     10341
+                 weighted avg       0.94      0.93      0.93     10341
+
+
+
+Efficientnet:
+
+
+Confusion Matrix, Without Normalization
+[[1129    0    0    0    0    0    0    0    0    1    0]
+ [   0  977    0    0    4    0    0    0    0    1    0]
+ [   0    2 1242    0    0    0    0    0    0    1    0]
+ [   0    0    0 1101    1    0    0    0    0    0    0]
+ [   5    0    0    3 1143    0    0    0    0    2    0]
+ [   0    0    0    0    0  698    1    0    0    0    0]
+ [   0    0    0    0    0    0  729    0    0    2    0]
+ [   0    0    0    0    0    0    0  816    0    0    0]
+ [   1    0    0    0    0    0    1    0  858    1    0]
+ [   0    0    0    0    0    0    0    0    0 1220    0]
+ [   0    0    0    5    0    0    0    0    0    0  397]]
+                               precision    recall  f1-score   support
+
+               Bacterial_spot       0.99      1.00      1.00      1130
+                 Early_blight       1.00      0.99      1.00       982
+                  Late_blight       1.00      1.00      1.00      1245
+                    Leaf_Mold       0.99      1.00      1.00      1102
+           Septoria_leaf_spot       1.00      0.99      0.99      1153
+                 Spider_mites       1.00      1.00      1.00       699
+                  Target_Spot       1.00      1.00      1.00       731
+Tomato_Yellow_Leaf_Curl_Virus       1.00      1.00      1.00       816
+          Tomato_mosaic_virus       1.00      1.00      1.00       861
+                      healthy       0.99      1.00      1.00      1220
+               powdery_mildew       1.00      0.99      0.99       402
+
+                     accuracy                           1.00     10341
+                    macro avg       1.00      1.00      1.00     10341
+                 weighted avg       1.00      1.00      1.00     10341
+
+
+mobile net:
+383/383 [==============================] - 58s 150ms/step - loss: 0.2465 - accuracy: 0.9817
+383/383 [==============================] - 52s 135ms/step - loss: 0.2426 - accuracy: 0.9829
+383/383 [==============================] - 47s 123ms/step - loss: 0.2424 - accuracy: 0.9834
+Train Loss:  0.24650311470031738
+Train Accuracy:  0.9817232489585876
+--------------------
+Validation Loss:  0.24258938431739807
+Validation Accuracy:  0.9829471111297607
+--------------------
+Test Loss:  0.24244190752506256
+Test Accuracy:  0.9833672046661377
+
+efficientnet:
+
+383/383 [==============================] - 54s 141ms/step - loss: 0.1781 - accuracy: 0.9973
+383/383 [==============================] - 52s 136ms/step - loss: 0.1774 - accuracy: 0.9975
+383/383 [==============================] - 47s 121ms/step - loss: 0.1800 - accuracy: 0.9970
+Train Loss:  0.17812779545783997
+Train Accuracy:  0.9973074197769165
+--------------------
+Validation Loss:  0.17743279039859772
+Validation Accuracy:  0.9974706172943115
+--------------------
+Test Loss:  0.17997638881206512
+Test Accuracy:  0.9970022439956665
